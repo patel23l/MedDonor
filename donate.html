@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>User Database</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <main>
+            <form>
+                <label for = "userID">User ID</label>
+                <input type ="text" name="userID" id="userId"><br>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName"><br>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" name="lastName" id="lastName"><br>
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age"><br>
+                <button id="addBtn" class="btn waves-effect waves-light">Add</button>             
+            </form>
+        </main>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDbWRvc4A_VBkFAwLBE-4zEWoiM2nkB85A",
+    authDomain: "meddonor-d1118.firebaseapp.com",
+    databaseURL: "https://meddonor-d1118.firebaseio.com",
+    projectId: "meddonor-d1118",
+    storageBucket: "meddonor-d1118.appspot.com",
+    messagingSenderId: "528524178623",
+    appId: "1:528524178623:web:71302aca62118ab553c20a",
+    measurementId: "G-FJJ4TTBVBQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+        <script src="./donate.js"></script>
+    </body>
+</html>
